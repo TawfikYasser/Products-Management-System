@@ -1,0 +1,29 @@
+ALTER PROC ADD_ORDER_DETAILS
+@ID_PRODUCT VARCHAR(30),
+@ID_ORDER INT,
+@QTE INT,
+@PRICE VARCHAR(50),
+@DISCOUNT FLOAT,
+@AMOUNT VARCHAR(50),
+@TOTAL_AMOUNT VARCHAR(50)
+
+AS
+INSERT INTO [dbo].[ORDERS_DETAILS]
+           ([ID_PRODUCT]
+           ,[ID_ORDER]
+           ,[QTE]
+           ,[PRICE]
+           ,[DISCOUNT]
+           ,[AMOUNT]
+           ,[TOTAL_AMOUNT])
+     VALUES
+           (@ID_PRODUCT
+           ,@ID_ORDER
+           ,@QTE
+           ,@PRICE
+           ,@DISCOUNT
+           ,@AMOUNT
+           ,@TOTAL_AMOUNT)
+
+UPDATE PRODUCTS SET QTE_IN_SROCK = QTE_IN_SROCK - @QTE 
+WHERE ID_PRODUCT = @ID_PRODUCT;

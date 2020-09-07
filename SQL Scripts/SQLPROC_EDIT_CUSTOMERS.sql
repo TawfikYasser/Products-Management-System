@@ -1,0 +1,36 @@
+CREATE PROC EDIT_CUSTOMERS
+
+@FIRST_NAME NVARCHAR(25),
+@LAST_NAME NVARCHAR(25),
+@TEL NCHAR(15),
+@EMAIL VARCHAR(25),
+@PICUTRE IMAGE,
+@Criterion varchar(50),
+@ID INT
+
+AS
+
+if @Criterion='with_image'
+begin
+
+
+UPDATE [CUSTOMERS]
+   SET [FIRST_NAME] = @FIRST_NAME
+      ,[LAST_NAME] = @LAST_NAME
+      ,[TEL] = @TEL
+      ,[EMAIL] = @EMAIL
+      ,[IMAGE_CUSTOMER] = @PICUTRE
+ WHERE ID_CUSTOMER = @ID
+
+end
+
+if @Criterion='without_image'
+begin
+UPDATE [CUSTOMERS]
+   SET [FIRST_NAME] = @FIRST_NAME
+      ,[LAST_NAME] = @LAST_NAME
+      ,[TEL] = @TEL
+      ,[EMAIL] = @EMAIL
+ WHERE ID_CUSTOMER = @ID
+
+end

@@ -1,0 +1,21 @@
+CREATE PROC ADD_PRODUCT
+@ID_CAT INT,
+@ID_PRODUCT VARCHAR(30),
+@LABEL NVARCHAR(MAX),
+@Qte INT,
+@PRICE VARCHAR(50),
+@Img IMAGE
+
+AS
+
+INSERT INTO [dbo].[PRODUCTS]
+           ([ID_PRODUCT]
+           ,[LABEL_PRODUCT]
+           ,[QTE_IN_SROCK]
+           ,[PRICE]
+           ,[IMAGE_PRODUCT]
+           ,[ID_CAT])
+     VALUES
+           (@ID_PRODUCT,@LABEL,@Qte,@PRICE,@Img,@ID_CAT)
+
+

@@ -1,0 +1,15 @@
+﻿ALTER PROC GET_ALL_PRODUCTS
+AS
+
+SELECT [ID_PRODUCT] as 'رقم المنتج'
+      ,[LABEL_PRODUCT] as 'وصف المنتج'
+      ,[QTE_IN_SROCK] as 'الكمية المخزنة'
+      ,[PRICE] as 'سعر المنتج'
+      ,[DESCRIPTION_CAT] as 'الصنف'
+  FROM [dbo].[PRODUCTS]
+	INNER JOIN CATEGORIES
+	ON CATEGORIES.ID_CAT = [PRODUCTS].ID_CAT
+
+
+  --ALTER BECAUSE WE CHANGED THE SELECTION DATA
+

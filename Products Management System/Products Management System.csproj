@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DF84A3CC-3BE0-4B00-B828-22CE2B939DC4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Products_Management_System</RootNamespace>
+    <AssemblyName>Products Management System</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Win32Resource>
+    </Win32Resource>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Business Layer\CLS_CUSTOMERS.cs" />
+    <Compile Include="Business Layer\CLS_LOGIN.cs" />
+    <Compile Include="Business Layer\ClS_ORDERS.cs" />
+    <Compile Include="Business Layer\CLS_PRODUCTS.cs" />
+    <Compile Include="Data Access Layer\Data Access Layer.cs" />
+    <Compile Include="Presentation Layer\FRM_ADD_PRODUCT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\FRM_ADD_PRODUCT.Designer.cs">
+      <DependentUpon>FRM_ADD_PRODUCT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\FRM_ADD_USER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\FRM_ADD_USER.Designer.cs">
+      <DependentUpon>FRM_ADD_USER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\FRM_BACKUP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\FRM_BACKUP.Designer.cs">
+      <DependentUpon>FRM_BACKUP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\FRM_CATEGORIES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\FRM_CATEGORIES.Designer.cs">
+      <DependentUpon>FRM_CATEGORIES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\FRM_CUSTOMERS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\FRM_CUSTOMERS.Designer.cs">
+      <DependentUpon>FRM_CUSTOMERS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\FRM_CUSTOMERS_LIST.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\FRM_CUSTOMERS_LIST.Designer.cs">
+      <DependentUpon>FRM_CUSTOMERS_LIST.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\FRM_LOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\FRM_LOGIN.Designer.cs">
+      <DependentUpon>FRM_LOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\FRM_MAIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\FRM_MAIN.Designer.cs">
+      <DependentUpon>FRM_MAIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\FRM_ORDERS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\FRM_ORDERS.Designer.cs">
+      <DependentUpon>FRM_ORDERS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\FRM_ORDERS_LIST.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\FRM_ORDERS_LIST.Designer.cs">
+      <DependentUpon>FRM_ORDERS_LIST.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\FRM_PREVIEW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\FRM_PREVIEW.Designer.cs">
+      <DependentUpon>FRM_PREVIEW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\FRM_PRODUCTS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\FRM_PRODUCTS.Designer.cs">
+      <DependentUpon>FRM_PRODUCTS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\FRM_PRODUCTS_LIST.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\FRM_PRODUCTS_LIST.Designer.cs">
+      <DependentUpon>FRM_PRODUCTS_LIST.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\FRM_RESTORE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\FRM_RESTORE.Designer.cs">
+      <DependentUpon>FRM_RESTORE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\FRM_USERS_LIST.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\FRM_USERS_LIST.Designer.cs">
+      <DependentUpon>FRM_USERS_LIST.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RPT\FRM_RPT_PRODUCTcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPT\FRM_RPT_PRODUCTcs.Designer.cs">
+      <DependentUpon>FRM_RPT_PRODUCTcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\rpt_all_categories.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_all_categories.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RPT\rpt_all_products.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_all_products.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RPT\rpt_orders.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_orders.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\rpt_prd_single.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_prd_single.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RPT\rpt_single_category.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_single_category.rpt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Presentation Layer\FRM_ADD_PRODUCT.resx">
+      <DependentUpon>FRM_ADD_PRODUCT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\FRM_ADD_USER.resx">
+      <DependentUpon>FRM_ADD_USER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\FRM_BACKUP.resx">
+      <DependentUpon>FRM_BACKUP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\FRM_CATEGORIES.resx">
+      <DependentUpon>FRM_CATEGORIES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\FRM_CUSTOMERS.resx">
+      <DependentUpon>FRM_CUSTOMERS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\FRM_CUSTOMERS_LIST.resx">
+      <DependentUpon>FRM_CUSTOMERS_LIST.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\FRM_LOGIN.resx">
+      <DependentUpon>FRM_LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\FRM_MAIN.resx">
+      <DependentUpon>FRM_MAIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\FRM_ORDERS.resx">
+      <DependentUpon>FRM_ORDERS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\FRM_ORDERS_LIST.resx">
+      <DependentUpon>FRM_ORDERS_LIST.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\FRM_PREVIEW.resx">
+      <DependentUpon>FRM_PREVIEW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\FRM_PRODUCTS.resx">
+      <DependentUpon>FRM_PRODUCTS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\FRM_PRODUCTS_LIST.resx">
+      <DependentUpon>FRM_PRODUCTS_LIST.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\FRM_RESTORE.resx">
+      <DependentUpon>FRM_RESTORE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\FRM_USERS_LIST.resx">
+      <DependentUpon>FRM_USERS_LIST.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RPT\FRM_RPT_PRODUCTcs.resx">
+      <DependentUpon>FRM_RPT_PRODUCTcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rpt_all_categories.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_all_categories.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rpt_all_products.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_all_products.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rpt_orders.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_orders.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rpt_prd_single.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_prd_single.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rpt_single_category.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_single_category.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
