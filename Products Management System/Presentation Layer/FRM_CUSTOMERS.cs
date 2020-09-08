@@ -51,6 +51,7 @@ namespace Products_Management_System.Presentation_Layer
                         cust.ADD_CUSTOMERS(txtFirstName.Text, txtLastName.Text, txtTel.Text, txtEmail.Text, picture, "without_image");
                         MessageBox.Show("تم إضافة العميل بنجاح", "تنبيه", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         this.dgList.DataSource = cust.GET_ALL_CUSTOMERS();
+                        dgList.Refresh();
                         txtFirstName.Clear();
                         txtLastName.Clear();
                         txtTel.Clear();
@@ -67,6 +68,7 @@ namespace Products_Management_System.Presentation_Layer
                         cust.ADD_CUSTOMERS(txtFirstName.Text, txtLastName.Text, txtTel.Text, txtEmail.Text, picture, "with_image");
                         MessageBox.Show("تم إضافة العميل بنجاح", "تنبيه", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         this.dgList.DataSource = cust.GET_ALL_CUSTOMERS();
+                        dgList.Refresh();
                         txtFirstName.Clear();
                         txtLastName.Clear();
                         txtTel.Clear();
@@ -154,6 +156,7 @@ namespace Products_Management_System.Presentation_Layer
         private void dgList_DoubleClick(object sender, EventArgs e)
         {
 
+
             try
             {
                 pbox.Image = null;
@@ -165,14 +168,17 @@ namespace Products_Management_System.Presentation_Layer
                 byte[] Picture = (byte[])dgList.CurrentRow.Cells[5].Value;
                 MemoryStream ms = new MemoryStream(Picture);
                 pbox.Image = Image.FromStream(ms);
+
                 btnEdit.Enabled = true;
                 btnDelete.Enabled = true;
             }
             catch
             {
+                btnEdit.Enabled = true;
+                btnDelete.Enabled = true;
                 return;
             }
-    
+
         }
 
         private void btnEdit_Click(object sender, EventArgs e)

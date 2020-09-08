@@ -46,8 +46,6 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.btnCloseUF);
-            this.groupBox2.Controls.Add(this.btnSaveU);
             this.groupBox2.Controls.Add(this.comboType);
             this.groupBox2.Controls.Add(this.tCPass);
             this.groupBox2.Controls.Add(this.tPass);
@@ -60,7 +58,7 @@
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Location = new System.Drawing.Point(12, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(580, 286);
+            this.groupBox2.Size = new System.Drawing.Size(407, 286);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "   بيانات المستخدم   ";
@@ -68,7 +66,7 @@
             // 
             // btnCloseUF
             // 
-            this.btnCloseUF.Location = new System.Drawing.Point(18, 234);
+            this.btnCloseUF.Location = new System.Drawing.Point(226, 304);
             this.btnCloseUF.Name = "btnCloseUF";
             this.btnCloseUF.Size = new System.Drawing.Size(151, 38);
             this.btnCloseUF.TabIndex = 6;
@@ -78,7 +76,7 @@
             // 
             // btnSaveU
             // 
-            this.btnSaveU.Location = new System.Drawing.Point(18, 47);
+            this.btnSaveU.Location = new System.Drawing.Point(69, 304);
             this.btnSaveU.Name = "btnSaveU";
             this.btnSaveU.Size = new System.Drawing.Size(151, 38);
             this.btnSaveU.TabIndex = 5;
@@ -93,7 +91,7 @@
             this.comboType.Items.AddRange(new object[] {
             "مدير",
             "عادي"});
-            this.comboType.Location = new System.Drawing.Point(185, 239);
+            this.comboType.Location = new System.Drawing.Point(18, 239);
             this.comboType.Name = "comboType";
             this.comboType.Size = new System.Drawing.Size(272, 33);
             this.comboType.TabIndex = 4;
@@ -101,7 +99,7 @@
             // tCPass
             // 
             this.tCPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tCPass.Location = new System.Drawing.Point(185, 191);
+            this.tCPass.Location = new System.Drawing.Point(18, 191);
             this.tCPass.Name = "tCPass";
             this.tCPass.PasswordChar = '*';
             this.tCPass.Size = new System.Drawing.Size(272, 30);
@@ -110,7 +108,7 @@
             // tPass
             // 
             this.tPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tPass.Location = new System.Drawing.Point(185, 143);
+            this.tPass.Location = new System.Drawing.Point(18, 143);
             this.tPass.Name = "tPass";
             this.tPass.PasswordChar = '*';
             this.tPass.Size = new System.Drawing.Size(272, 30);
@@ -119,7 +117,7 @@
             // tFullName
             // 
             this.tFullName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tFullName.Location = new System.Drawing.Point(185, 95);
+            this.tFullName.Location = new System.Drawing.Point(18, 95);
             this.tFullName.Name = "tFullName";
             this.tFullName.Size = new System.Drawing.Size(272, 30);
             this.tFullName.TabIndex = 1;
@@ -127,7 +125,7 @@
             // tUserName
             // 
             this.tUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tUserName.Location = new System.Drawing.Point(185, 47);
+            this.tUserName.Location = new System.Drawing.Point(18, 47);
             this.tUserName.Name = "tUserName";
             this.tUserName.Size = new System.Drawing.Size(272, 30);
             this.tUserName.TabIndex = 0;
@@ -135,7 +133,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(477, 242);
+            this.label10.Location = new System.Drawing.Point(310, 242);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(69, 17);
             this.label10.TabIndex = 4;
@@ -144,7 +142,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(477, 194);
+            this.label9.Location = new System.Drawing.Point(310, 194);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(86, 17);
             this.label9.TabIndex = 3;
@@ -153,7 +151,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(477, 146);
+            this.label8.Location = new System.Drawing.Point(310, 146);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(62, 17);
             this.label8.TabIndex = 2;
@@ -162,7 +160,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(477, 98);
+            this.label7.Location = new System.Drawing.Point(310, 98);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(63, 17);
             this.label7.TabIndex = 1;
@@ -171,7 +169,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(477, 50);
+            this.label6.Location = new System.Drawing.Point(310, 50);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(68, 17);
             this.label6.TabIndex = 0;
@@ -179,8 +177,10 @@
             // 
             // FRM_ADD_USER
             // 
-            this.ClientSize = new System.Drawing.Size(604, 307);
+            this.ClientSize = new System.Drawing.Size(431, 353);
+            this.Controls.Add(this.btnCloseUF);
             this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.btnSaveU);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;

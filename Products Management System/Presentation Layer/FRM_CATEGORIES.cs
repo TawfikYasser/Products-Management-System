@@ -73,6 +73,8 @@ namespace Products_Management_System.Presentation_Layer
             bmb.AddNew();
             btnNew.Enabled = false;
             btnAdd.Enabled = true;
+            btnEdit.Enabled = false;
+            btnDelete.Enabled = false;
             int id = Convert.ToInt32(dt.Rows[dt.Rows.Count - 1][0])+1;
             txtID.Text = id.ToString();
             txtDesc.Focus();
@@ -91,8 +93,11 @@ namespace Products_Management_System.Presentation_Layer
                 bmb.EndCurrentEdit();
                 cmdb = new SqlCommandBuilder(da);
                 da.Update(dt);
+                dgList.DataSource = dt;
                 btnAdd.Enabled = false;
                 btnNew.Enabled = true;
+                btnEdit.Enabled = true;
+                btnDelete.Enabled = true;
                 lblPosition.Text = (bmb.Position + 1) + " / " + bmb.Count;
                 MessageBox.Show("تم إضافة الصنف الجديد", "تنبيه", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -108,6 +113,7 @@ namespace Products_Management_System.Presentation_Layer
                 bmb.EndCurrentEdit();
                 cmdb = new SqlCommandBuilder(da);
                 da.Update(dt);
+                dgList.DataSource = dt;
                 lblPosition.Text = (bmb.Position + 1) + " / " + bmb.Count;
                 MessageBox.Show("تم حذف الصنف", "تنبيه", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }

@@ -125,7 +125,7 @@ namespace Products_Management_System.Presentation_Layer
             frm.pbox.Image = Image.FromStream(ms);
             frm.ShowDialog();
             this.dataGridView1.DataSource = prd.GET_ALL_PRODUCTS();
-
+            dataGridView1.Refresh();
 
         }
 
@@ -149,6 +149,7 @@ namespace Products_Management_System.Presentation_Layer
 
         private void button7_Click(object sender, EventArgs e)
         {
+            button7.Enabled = false;
             RPT.rpt_all_products myrep_to_excel = new RPT.rpt_all_products();
             //Create export options
             ExportOptions export = new ExportOptions();
@@ -164,7 +165,7 @@ namespace Products_Management_System.Presentation_Layer
             export.ExportDestinationOptions = dfOptions;
             myrep_to_excel.Export();
             MessageBox.Show("تم تصدير جميع المنتجات الى ملف اكسيل.","تنبيه",MessageBoxButtons.OK,MessageBoxIcon.Information);
-
+            button7.Enabled = true;
         }
 
         private void button8_Click(object sender, EventArgs e)
