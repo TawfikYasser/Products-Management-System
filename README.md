@@ -31,7 +31,7 @@ Main system functional requirements, starting with that system allow to add prod
 
 ---
 
-###### Example of SQL
+###### Example of SQL - For adding PRODUCTS table
 
 ``` sql
 CREATE table PRODUCTS
