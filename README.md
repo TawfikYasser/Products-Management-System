@@ -4,6 +4,10 @@
 
 Products management system allows users to manage their products, clients, and orders, also to manage categories and its products, to make the process of selling easier.
 
+### Why this project
+
+This project is an application for Software Engineering Principles, Object-Oriented Programming, and Databases.
+
 ### Tools & Technologies
 
 + Microsoft Visual Studio Community 2019 – Version 16.7.1
