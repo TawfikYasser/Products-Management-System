@@ -109,6 +109,11 @@ namespace Products_Management_System.Presentation_Layer
             InitializeComponent();
             createDataTable();
             txtSalesMan.Text = Program.salesman;
+            txtDescOrder.Enabled = false;
+            dtorder.Enabled = false;
+            button1.Enabled = false;
+            btnBrowseProdcuts.Enabled = false;
+            dgvProducts.Enabled = false;
             //resizeDGV();
         }
 
@@ -127,17 +132,31 @@ namespace Products_Management_System.Presentation_Layer
             this.txtOrderId.Text = order.GET_LAST_ORDER_ID().Rows[0][0].ToString();
             btnNewOrder.Enabled = false;
             btnSaveOrder.Enabled = true;
+
+            txtDescOrder.Enabled = true;
+            dtorder.Enabled = true;
+            button1.Enabled = true;
+            btnBrowseProdcuts.Enabled = true;
+            dgvProducts.Enabled = true;
+
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            btnPrintOrder.Enabled = true;
 
+           
             //check values
-            if(txtOrderId.Text == string.Empty || txtCustomerId.Text == string.Empty || 
+            if (txtOrderId.Text == string.Empty || txtCustomerId.Text == string.Empty || 
                 dgvProducts.Rows.Count<1 || txtDescOrder.Text == string.Empty)
             {
                 MessageBox.Show("تحقق من جميع البيانات المطلوبة");
+                btnPrintOrder.Enabled = true;
+                txtDescOrder.Enabled = false;
+                dtorder.Enabled = false;
+                button1.Enabled = false;
+                btnBrowseProdcuts.Enabled = false;
+                dgvProducts.Enabled = false;
+                btnNewOrder.Focus();
                 return;
             }
 

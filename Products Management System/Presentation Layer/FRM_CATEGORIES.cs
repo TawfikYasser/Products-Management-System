@@ -133,6 +133,7 @@ namespace Products_Management_System.Presentation_Layer
         {
             RPT.rpt_single_category my_report_single_cat = new RPT.rpt_single_category();
             RPT.FRM_RPT_PRODUCTcs mForm = new RPT.FRM_RPT_PRODUCTcs();
+            my_report_single_cat.Refresh();
             my_report_single_cat.SetParameterValue("@ID", Convert.ToInt32(txtID.Text));
             mForm.crystalReportViewer1.ReportSource = my_report_single_cat;
             mForm.ShowDialog();

@@ -34,6 +34,7 @@ namespace Products_Management_System.Presentation_Layer
             int order_id =Convert.ToInt32(dvbOrders.CurrentRow.Cells[0].Value);
             RPT.rpt_orders reporto = new RPT.rpt_orders();
             RPT.FRM_RPT_PRODUCTcs frm = new RPT.FRM_RPT_PRODUCTcs();
+            reporto.Refresh();
             reporto.SetDataSource(order.GET_ORDER_DETAILS(order_id));
             frm.crystalReportViewer1.ReportSource = reporto;
             frm.ShowDialog();

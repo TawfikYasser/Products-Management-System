@@ -61,6 +61,7 @@ namespace Products_Management_System.Presentation_Layer
             RPT.rpt_prd_single my_report = new RPT.rpt_prd_single();
             my_report.SetParameterValue("@ID", this.dataGridView1.CurrentRow.Cells[0].Value.ToString());
             RPT.FRM_RPT_PRODUCTcs myForm = new RPT.FRM_RPT_PRODUCTcs();
+            my_report.Refresh();
             myForm.crystalReportViewer1.ReportSource = my_report;
             myForm.ShowDialog();
             
@@ -138,6 +139,7 @@ namespace Products_Management_System.Presentation_Layer
         {
             RPT.rpt_all_products my_report_all = new RPT.rpt_all_products();
             RPT.FRM_RPT_PRODUCTcs mForm = new RPT.FRM_RPT_PRODUCTcs();
+            my_report_all.Refresh();
             mForm.crystalReportViewer1.ReportSource = my_report_all;
             mForm.ShowDialog();
         }
