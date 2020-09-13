@@ -150,6 +150,12 @@ namespace Products_Management_System.Presentation_Layer
 
         }
 
+        private void إعداداتالسيرفرToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Presentation_Layer.FRM_CONFIG frm = new Presentation_Layer.FRM_CONFIG();
+            frm.ShowDialog();
+        }
+
         //System.Diagnostics.Process.Start("https://www.linkedin.com/in/tawfikyasser/");
 
     }

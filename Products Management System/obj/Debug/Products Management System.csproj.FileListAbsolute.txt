@@ -88,3 +88,8 @@ T:\FCAI\My Projects\DB\Products-Management-System\Products Management System\obj
 T:\FCAI\My Projects\DB\Products-Management-System\Products Management System\obj\Debug\Products Management System.csproj.CopyComplete
 T:\FCAI\My Projects\DB\Products-Management-System\Products Management System\obj\Debug\Products Management System.exe
 T:\FCAI\My Projects\DB\Products-Management-System\Products Management System\obj\Debug\Products Management System.pdb
+T:\FCAI\My Projects\DB\Products-Management-System\Products Management System\obj\Debug\Products_Management_System.Presentation_Layer.FRM_CONFIG.resources
+T:\FCAI\My Projects\DB\Products-Management-System\Products Management System\bin\Debug\Products Management System.exe.manifest
+T:\FCAI\My Projects\DB\Products-Management-System\Products Management System\bin\Debug\Products Management System.application
+T:\FCAI\My Projects\DB\Products-Management-System\Products Management System\obj\Debug\Products Management System.exe.manifest
+T:\FCAI\My Projects\DB\Products-Management-System\Products Management System\obj\Debug\Products Management System.application

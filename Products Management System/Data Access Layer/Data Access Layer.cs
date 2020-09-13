@@ -16,7 +16,21 @@ namespace Products_Management_System.Data_Access_Layer
         public Data_Access_Layer()
 
         {
-            sqlconnection = new SqlConnection("Server=DESKTOP-KM1EAAM; Database=POS_DB; Integrated Security=true");
+
+            string mode = Properties.Settings.Default.Mode;
+            if(mode == "SQL")
+            {
+                sqlconnection = new SqlConnection("Server=" + Properties.Settings.Default.Server + "" +
+                "; Database=" + Properties.Settings.Default.Database + ";" +
+                " Integrated Security=false; User ID="+Properties.Settings.Default.ID+";" +
+                " Password="+Properties.Settings.Default.Password+"");
+            }
+            else
+            {
+                sqlconnection = new SqlConnection("Server=" + Properties.Settings.Default.Server + "" +
+                "; Database=" + Properties.Settings.Default.Database + "; Integrated Security=true");
+            }
+            
         }
 
         //Method to open the connection
