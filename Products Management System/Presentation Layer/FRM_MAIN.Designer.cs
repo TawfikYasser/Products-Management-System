@@ -64,7 +64,7 @@
             this.المستخدمينToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1098, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(1098, 28);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -77,7 +77,7 @@
             this.إعداداتالسيرفرToolStripMenuItem,
             this.تسجيلالخروجToolStripMenuItem});
             this.ملفToolStripMenuItem.Name = "ملفToolStripMenuItem";
-            this.ملفToolStripMenuItem.Size = new System.Drawing.Size(73, 26);
+            this.ملفToolStripMenuItem.Size = new System.Drawing.Size(73, 24);
             this.ملفToolStripMenuItem.Text = "الرئيسية";
             // 
             // تسجيلالدخولToolStripMenuItem
@@ -123,7 +123,7 @@
             this.toolStripSeparator1,
             this.إدارةالأصنافToolStripMenuItem});
             this.المنتجاتToolStripMenuItem.Name = "المنتجاتToolStripMenuItem";
-            this.المنتجاتToolStripMenuItem.Size = new System.Drawing.Size(142, 26);
+            this.المنتجاتToolStripMenuItem.Size = new System.Drawing.Size(142, 24);
             this.المنتجاتToolStripMenuItem.Text = "المنتجات والأصناف";
             this.المنتجاتToolStripMenuItem.Click += new System.EventHandler(this.المنتجاتToolStripMenuItem_Click);
             // 
@@ -161,7 +161,7 @@
             this.إضافةعمليةبيعToolStripMenuItem,
             this.إدارةالمبيعاتوالتقاريرToolStripMenuItem});
             this.العملاءToolStripMenuItem.Name = "العملاءToolStripMenuItem";
-            this.العملاءToolStripMenuItem.Size = new System.Drawing.Size(122, 26);
+            this.العملاءToolStripMenuItem.Size = new System.Drawing.Size(122, 24);
             this.العملاءToolStripMenuItem.Text = "العملاء والفواتير";
             this.العملاءToolStripMenuItem.Click += new System.EventHandler(this.العملاءToolStripMenuItem_Click);
             // 
@@ -197,7 +197,7 @@
             this.إضافةمستخدمجديدToolStripMenuItem,
             this.إدارةالمستخدمينToolStripMenuItem});
             this.المستخدمينToolStripMenuItem.Name = "المستخدمينToolStripMenuItem";
-            this.المستخدمينToolStripMenuItem.Size = new System.Drawing.Size(177, 26);
+            this.المستخدمينToolStripMenuItem.Size = new System.Drawing.Size(177, 24);
             this.المستخدمينToolStripMenuItem.Text = "المستخدمين والصلاحيات";
             this.المستخدمينToolStripMenuItem.Click += new System.EventHandler(this.المستخدمينToolStripMenuItem_Click);
             // 
@@ -219,9 +219,9 @@
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 30);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 28);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1098, 547);
+            this.pictureBox1.Size = new System.Drawing.Size(1098, 549);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
@@ -273,6 +273,6 @@
         public System.Windows.Forms.ToolStripMenuItem العملاءToolStripMenuItem;
         public System.Windows.Forms.ToolStripMenuItem المستخدمينToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.ToolStripMenuItem إعداداتالسيرفرToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem إعداداتالسيرفرToolStripMenuItem;
     }
 }

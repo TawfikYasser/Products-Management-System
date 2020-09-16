@@ -47,6 +47,8 @@ namespace Products_Management_System.Presentation_Layer
                         FRM_MAIN.getMainForm.إستعادةنسخةمحفوظةToolStripMenuItem.Enabled = true;
                         FRM_MAIN.getMainForm.تسجيلالدخولToolStripMenuItem.Enabled = false;
                         FRM_MAIN.getMainForm.تسجيلالخروجToolStripMenuItem.Enabled = true;
+                        FRM_MAIN.getMainForm.إعداداتالسيرفرToolStripMenuItem.Enabled = true;
+
                         Program.salesman = Dt.Rows[0]["FullName"].ToString();
                         this.Close();
                     }

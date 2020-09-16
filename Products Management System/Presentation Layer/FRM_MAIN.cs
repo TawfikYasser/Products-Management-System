@@ -49,6 +49,7 @@ namespace Products_Management_System.Presentation_Layer
             this.إنشاءنسخةإحتياطيةToolStripMenuItem.Enabled = false;
             this.إستعادةنسخةمحفوظةToolStripMenuItem.Enabled = false;
             this.تسجيلالخروجToolStripMenuItem.Enabled = false;
+            this.إعداداتالسيرفرToolStripMenuItem.Enabled = false;
 
         }
 
@@ -138,6 +139,8 @@ namespace Products_Management_System.Presentation_Layer
             this.إستعادةنسخةمحفوظةToolStripMenuItem.Enabled = false;
             this.تسجيلالخروجToolStripMenuItem.Enabled = false;
             this.تسجيلالدخولToolStripMenuItem.Enabled = true;
+            this.إعداداتالسيرفرToolStripMenuItem.Enabled = false;
+
         }
 
         private void المنتجاتToolStripMenuItem_Click(object sender, EventArgs e)
