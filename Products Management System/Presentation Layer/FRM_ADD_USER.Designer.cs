@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnCloseUF = new System.Windows.Forms.Button();
-            this.btnSaveU = new System.Windows.Forms.Button();
             this.comboType = new System.Windows.Forms.ComboBox();
             this.tCPass = new System.Windows.Forms.TextBox();
             this.tPass = new System.Windows.Forms.TextBox();
@@ -41,6 +39,8 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.btnCloseUF = new System.Windows.Forms.Button();
+            this.btnSaveU = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,26 +63,6 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "   بيانات المستخدم   ";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
-            // 
-            // btnCloseUF
-            // 
-            this.btnCloseUF.Location = new System.Drawing.Point(226, 304);
-            this.btnCloseUF.Name = "btnCloseUF";
-            this.btnCloseUF.Size = new System.Drawing.Size(151, 38);
-            this.btnCloseUF.TabIndex = 6;
-            this.btnCloseUF.Text = "خروج";
-            this.btnCloseUF.UseVisualStyleBackColor = true;
-            this.btnCloseUF.Click += new System.EventHandler(this.btnCloseUF_Click);
-            // 
-            // btnSaveU
-            // 
-            this.btnSaveU.Location = new System.Drawing.Point(69, 304);
-            this.btnSaveU.Name = "btnSaveU";
-            this.btnSaveU.Size = new System.Drawing.Size(151, 38);
-            this.btnSaveU.TabIndex = 5;
-            this.btnSaveU.Text = "حفظ";
-            this.btnSaveU.UseVisualStyleBackColor = true;
-            this.btnSaveU.Click += new System.EventHandler(this.btnSaveU_Click);
             // 
             // comboType
             // 
@@ -174,6 +154,26 @@
             this.label6.Size = new System.Drawing.Size(68, 17);
             this.label6.TabIndex = 0;
             this.label6.Text = "اسم المستخدم";
+            // 
+            // btnCloseUF
+            // 
+            this.btnCloseUF.Location = new System.Drawing.Point(282, 304);
+            this.btnCloseUF.Name = "btnCloseUF";
+            this.btnCloseUF.Size = new System.Drawing.Size(119, 38);
+            this.btnCloseUF.TabIndex = 6;
+            this.btnCloseUF.Text = "خروج";
+            this.btnCloseUF.UseVisualStyleBackColor = true;
+            this.btnCloseUF.Click += new System.EventHandler(this.btnCloseUF_Click);
+            // 
+            // btnSaveU
+            // 
+            this.btnSaveU.Location = new System.Drawing.Point(129, 304);
+            this.btnSaveU.Name = "btnSaveU";
+            this.btnSaveU.Size = new System.Drawing.Size(115, 38);
+            this.btnSaveU.TabIndex = 5;
+            this.btnSaveU.Text = "حفظ";
+            this.btnSaveU.UseVisualStyleBackColor = true;
+            this.btnSaveU.Click += new System.EventHandler(this.btnSaveU_Click);
             // 
             // FRM_ADD_USER
             // 
