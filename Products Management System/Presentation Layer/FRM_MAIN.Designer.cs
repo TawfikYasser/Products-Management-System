@@ -50,6 +50,7 @@
             this.إضافةمستخدمجديدToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.إدارةالمستخدمينToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.الإصدار161ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -61,7 +62,8 @@
             this.ملفToolStripMenuItem,
             this.المنتجاتToolStripMenuItem,
             this.العملاءToolStripMenuItem,
-            this.المستخدمينToolStripMenuItem});
+            this.المستخدمينToolStripMenuItem,
+            this.الإصدار161ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1098, 28);
@@ -226,6 +228,13 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
+            // الإصدار161ToolStripMenuItem
+            // 
+            this.الإصدار161ToolStripMenuItem.Enabled = false;
+            this.الإصدار161ToolStripMenuItem.Name = "الإصدار161ToolStripMenuItem";
+            this.الإصدار161ToolStripMenuItem.Size = new System.Drawing.Size(103, 24);
+            this.الإصدار161ToolStripMenuItem.Text = "الإصدار 1.6.1";
+            // 
             // FRM_MAIN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -274,5 +283,6 @@
         public System.Windows.Forms.ToolStripMenuItem المستخدمينToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox1;
         public System.Windows.Forms.ToolStripMenuItem إعداداتالسيرفرToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem الإصدار161ToolStripMenuItem;
     }
 }

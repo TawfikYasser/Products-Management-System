@@ -246,14 +246,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Products Management System.exe" size="773616">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Products Management System.exe" size="774128">
       <assemblyIdentity name="Products Management System" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>xQ+nozed3CyJiahTtkMusRO0ESk38hAsBHCYMEfrObg=</dsig:DigestValue>
+        <dsig:DigestValue>unddpTdoa7Mbj9wAC1aObduXUXJN5e+lPsv45tW5Kts=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
