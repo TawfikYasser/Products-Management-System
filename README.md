@@ -10,11 +10,11 @@ This project is an application for Software Engineering Principles, Object-Orien
 
 ### Tools & Technologies
 
-+ Microsoft Visual Studio Community 2019 – Version 16.7.1
-+ Microsoft .Net Framework – Version 4.8.04084
-+ Microsoft SQL Server Management Studio – Version 18.6
-+ SAP Crystal Reports SP 28 – Version 13.0.4000.0
-+ ERD Plus database modelling – Version 2.0
++ Microsoft Visual Studio Community 2019                     **_(Version 16.7.1)_**
++ Microsoft .Net Framework                                   **_(Version 4.8.04084)_**
++ Microsoft SQL Server Management Studio                     **_(Version 18.6)_**
++ SAP Crystal Reports SP 28                                  **_(Version 13.0.4000.0)_**
++ ERD Plus database modelling                                **_(Version 2.0)_**
 
 ### System Requirements
 
@@ -69,9 +69,9 @@ IMAGE_PRODUCT image );
 
 ---
 
-### More will be added soon.
 
 > This repo concerned with the connection among Software Engineering (SE) concepts, Object-Oriented Programming (OOP), and Database using SQL (DB).
 > Soon the SE Documentation will be added then any `developer` can contribute in it, OOP Conecpts applied in C# Programming Languages, and in the DB part, we used TSQL > > but any one can use SQL or TSQL or even SQL/PL.
+### More will be added soon.
 
 ###### End
