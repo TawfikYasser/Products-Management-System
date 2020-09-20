@@ -191,5 +191,10 @@ namespace Products_Management_System.Presentation_Layer
 
 
         }
+
+        private void exitCat_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

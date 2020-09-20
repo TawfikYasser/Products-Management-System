@@ -49,7 +49,9 @@ namespace Products_Management_System.Presentation_Layer
                         FRM_MAIN.getMainForm.تسجيلالخروجToolStripMenuItem.Enabled = true;
                         FRM_MAIN.getMainForm.إعداداتالسيرفرToolStripMenuItem.Enabled = true;
 
+
                         Program.salesman = Dt.Rows[0]["FullName"].ToString();
+                        FRM_MAIN.getMainForm.اسمالبائعToolStripMenuItem.Text = "البائع الحالي:  "+Dt.Rows[0]["FullName"].ToString();
                         this.Close();
                     }
                     else if(Dt.Rows[0][2].ToString() == "عادي")
@@ -63,6 +65,8 @@ namespace Products_Management_System.Presentation_Layer
                         FRM_MAIN.getMainForm.تسجيلالخروجToolStripMenuItem.Enabled = true;
 
                         Program.salesman = Dt.Rows[0]["FullName"].ToString();
+                        FRM_MAIN.getMainForm.اسمالبائعToolStripMenuItem.Text = "البائع الحالي:  " + Dt.Rows[0]["FullName"].ToString();
+
                         this.Close();
                     }
 
