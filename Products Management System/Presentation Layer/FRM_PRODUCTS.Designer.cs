@@ -52,9 +52,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(14, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(238, 25);
+            this.label1.Size = new System.Drawing.Size(251, 25);
             this.label1.TabIndex = 0;
-            this.label1.Text = "قم بإدخال الكلمة المراد البحث عنها:";
+            this.label1.Text = "ابحث هنا بكتابة اي شئ متعلق بالمنتج";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtSearch

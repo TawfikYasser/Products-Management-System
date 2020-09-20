@@ -80,5 +80,10 @@ namespace Products_Management_System.Presentation_Layer
 
 
         }
+
+        private void FRM_LOGIN_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -68,7 +68,7 @@
             this.اسمالبائعToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1098, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(1098, 28);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -81,7 +81,7 @@
             this.إعداداتالسيرفرToolStripMenuItem,
             this.تسجيلالخروجToolStripMenuItem});
             this.ملفToolStripMenuItem.Name = "ملفToolStripMenuItem";
-            this.ملفToolStripMenuItem.Size = new System.Drawing.Size(73, 26);
+            this.ملفToolStripMenuItem.Size = new System.Drawing.Size(73, 24);
             this.ملفToolStripMenuItem.Text = "الرئيسية";
             this.ملفToolStripMenuItem.ToolTipText = "القائمة الرئيسية";
             // 
@@ -128,7 +128,7 @@
             this.toolStripSeparator1,
             this.إدارةالأصنافToolStripMenuItem});
             this.المنتجاتToolStripMenuItem.Name = "المنتجاتToolStripMenuItem";
-            this.المنتجاتToolStripMenuItem.Size = new System.Drawing.Size(142, 26);
+            this.المنتجاتToolStripMenuItem.Size = new System.Drawing.Size(142, 24);
             this.المنتجاتToolStripMenuItem.Text = "المنتجات والأصناف";
             this.المنتجاتToolStripMenuItem.ToolTipText = "إدارة المنتجات والأصناف";
             this.المنتجاتToolStripMenuItem.Click += new System.EventHandler(this.المنتجاتToolStripMenuItem_Click);
@@ -167,7 +167,7 @@
             this.إضافةعمليةبيعToolStripMenuItem,
             this.إدارةالمبيعاتوالتقاريرToolStripMenuItem});
             this.العملاءToolStripMenuItem.Name = "العملاءToolStripMenuItem";
-            this.العملاءToolStripMenuItem.Size = new System.Drawing.Size(122, 26);
+            this.العملاءToolStripMenuItem.Size = new System.Drawing.Size(122, 24);
             this.العملاءToolStripMenuItem.Text = "العملاء والفواتير";
             this.العملاءToolStripMenuItem.ToolTipText = "إدارة العملاء والفواتير";
             this.العملاءToolStripMenuItem.Click += new System.EventHandler(this.العملاءToolStripMenuItem_Click);
@@ -204,7 +204,7 @@
             this.إضافةمستخدمجديدToolStripMenuItem,
             this.إدارةالمستخدمينToolStripMenuItem});
             this.المستخدمينToolStripMenuItem.Name = "المستخدمينToolStripMenuItem";
-            this.المستخدمينToolStripMenuItem.Size = new System.Drawing.Size(177, 26);
+            this.المستخدمينToolStripMenuItem.Size = new System.Drawing.Size(177, 24);
             this.المستخدمينToolStripMenuItem.Text = "المستخدمين والصلاحيات";
             this.المستخدمينToolStripMenuItem.ToolTipText = "إدارة المستخدمين والصلاحيات";
             this.المستخدمينToolStripMenuItem.Click += new System.EventHandler(this.المستخدمينToolStripMenuItem_Click);
@@ -227,15 +227,15 @@
             // 
             this.الإصدار161ToolStripMenuItem.Enabled = false;
             this.الإصدار161ToolStripMenuItem.Name = "الإصدار161ToolStripMenuItem";
-            this.الإصدار161ToolStripMenuItem.Size = new System.Drawing.Size(111, 26);
-            this.الإصدار161ToolStripMenuItem.Text = "الإصدار 1.7.15";
+            this.الإصدار161ToolStripMenuItem.Size = new System.Drawing.Size(111, 24);
+            this.الإصدار161ToolStripMenuItem.Text = "الإصدار 1.8.10";
             this.الإصدار161ToolStripMenuItem.ToolTipText = "رقم اخر إصدار";
             // 
             // اسمالبائعToolStripMenuItem
             // 
             this.اسمالبائعToolStripMenuItem.Enabled = false;
             this.اسمالبائعToolStripMenuItem.Name = "اسمالبائعToolStripMenuItem";
-            this.اسمالبائعToolStripMenuItem.Size = new System.Drawing.Size(85, 26);
+            this.اسمالبائعToolStripMenuItem.Size = new System.Drawing.Size(85, 24);
             this.اسمالبائعToolStripMenuItem.Text = "اسم البائع";
             this.اسمالبائعToolStripMenuItem.ToolTipText = "اسم البائع الحالي";
             // 
@@ -243,9 +243,9 @@
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 30);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 28);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1098, 547);
+            this.pictureBox1.Size = new System.Drawing.Size(1098, 549);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
