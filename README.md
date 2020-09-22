@@ -31,7 +31,7 @@ Main system functional requirements, starting with that system allow to add prod
 
 ---
 
-###### Example of SQL - For adding PRODUCTS table
+###### Example of SQL: For adding PRODUCTS table
 
 ``` sql
 CREATE table PRODUCTS
@@ -42,7 +42,7 @@ PRICE varchar(50),
 IMAGE_PRODUCT image );
 ```
 
-###### Example of C# - For editing a product
+###### Example of C#: For editing a product
 
 ``` c#
         private void button3_Click(object sender, EventArgs e)
@@ -69,9 +69,8 @@ IMAGE_PRODUCT image );
 
 ---
 
-
 > This repo concerned with the connection among Software Engineering (SE) concepts, Object-Oriented Programming (OOP), and Database using SQL (DB).
 > Soon the SE Documentation will be added then any `developer` can contribute in it, OOP Conecpts applied in C# Programming Languages, and in the DB part, we used TSQL > > but any one can use SQL or TSQL or even SQL/PL.
 ### More will be added soon.
 
-###### End
+###### 2020
