@@ -4,9 +4,13 @@
 
 Products management system allows users to manage their products, clients, and orders, also to manage categories and its products, to make the process of selling easier.
 
+---
+
 ### Why this project
 
 This project is an application for Software Engineering Principles, Object-Oriented Programming, and Databases.
+
+---
 
 ### Tools & Technologies
 
@@ -15,6 +19,8 @@ This project is an application for Software Engineering Principles, Object-Orien
 + Microsoft SQL Server Management Studio                     **_(Version 18.6)_**
 + SAP Crystal Reports SP 28                                  **_(Version 13.0.4000.0)_**
 + ERD Plus database modelling                                **_(Version 2.0)_**
+
+---
 
 ### System Requirements
 
