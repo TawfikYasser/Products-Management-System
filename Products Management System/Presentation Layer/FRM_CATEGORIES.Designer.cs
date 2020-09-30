@@ -41,6 +41,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dgList = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.exitCat = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.exportToPdfAll = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
@@ -50,7 +51,6 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnNew = new System.Windows.Forms.Button();
-            this.exitCat = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgList)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -166,6 +166,7 @@
             // 
             this.dgList.AllowUserToAddRows = false;
             this.dgList.AllowUserToDeleteRows = false;
+            this.dgList.AllowUserToResizeRows = false;
             this.dgList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgList.Location = new System.Drawing.Point(12, 297);
@@ -174,6 +175,7 @@
             this.dgList.ReadOnly = true;
             this.dgList.RowHeadersWidth = 51;
             this.dgList.RowTemplate.Height = 24;
+            this.dgList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgList.Size = new System.Drawing.Size(545, 224);
             this.dgList.TabIndex = 6;
             // 
@@ -196,6 +198,16 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "   العمليات المتاحة   ";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
+            // 
+            // exitCat
+            // 
+            this.exitCat.Location = new System.Drawing.Point(27, 439);
+            this.exitCat.Name = "exitCat";
+            this.exitCat.Size = new System.Drawing.Size(404, 65);
+            this.exitCat.TabIndex = 9;
+            this.exitCat.Text = "خروج";
+            this.exitCat.UseVisualStyleBackColor = true;
+            this.exitCat.Click += new System.EventHandler(this.exitCat_Click);
             // 
             // pictureBox1
             // 
@@ -289,16 +301,6 @@
             this.btnNew.Text = "جديد";
             this.btnNew.UseVisualStyleBackColor = true;
             this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
-            // 
-            // exitCat
-            // 
-            this.exitCat.Location = new System.Drawing.Point(27, 439);
-            this.exitCat.Name = "exitCat";
-            this.exitCat.Size = new System.Drawing.Size(404, 65);
-            this.exitCat.TabIndex = 9;
-            this.exitCat.Text = "خروج";
-            this.exitCat.UseVisualStyleBackColor = true;
-            this.exitCat.Click += new System.EventHandler(this.exitCat_Click);
             // 
             // FRM_CATEGORIES
             // 

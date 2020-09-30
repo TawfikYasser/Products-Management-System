@@ -140,6 +140,7 @@ namespace Products_Management_System.Presentation_Layer
             this.تسجيلالخروجToolStripMenuItem.Enabled = false;
             this.تسجيلالدخولToolStripMenuItem.Enabled = true;
             this.إعداداتالسيرفرToolStripMenuItem.Enabled = false;
+            this.اسمالبائعToolStripMenuItem.Text = "اسم البائع";
         }
 
         private void المنتجاتToolStripMenuItem_Click(object sender, EventArgs e)

@@ -36,14 +36,15 @@
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(27, 340);
+            this.label1.Location = new System.Drawing.Point(357, 47);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(72, 17);
             this.label1.TabIndex = 0;
@@ -52,7 +53,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(33, 391);
+            this.label2.Location = new System.Drawing.Point(357, 98);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(66, 17);
             this.label2.TabIndex = 0;
@@ -62,7 +63,7 @@
             // 
             this.txtID.Cursor = System.Windows.Forms.Cursors.Hand;
             this.txtID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtID.Location = new System.Drawing.Point(126, 334);
+            this.txtID.Location = new System.Drawing.Point(33, 41);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(299, 30);
             this.txtID.TabIndex = 0;
@@ -71,7 +72,7 @@
             // 
             this.txtPWD.Cursor = System.Windows.Forms.Cursors.Hand;
             this.txtPWD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPWD.Location = new System.Drawing.Point(126, 385);
+            this.txtPWD.Location = new System.Drawing.Point(33, 92);
             this.txtPWD.Name = "txtPWD";
             this.txtPWD.PasswordChar = '*';
             this.txtPWD.Size = new System.Drawing.Size(299, 30);
@@ -80,7 +81,7 @@
             // btnCancel
             // 
             this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCancel.Location = new System.Drawing.Point(300, 427);
+            this.btnCancel.Location = new System.Drawing.Point(207, 134);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(125, 34);
             this.btnCancel.TabIndex = 3;
@@ -91,7 +92,7 @@
             // btnLogin
             // 
             this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLogin.Location = new System.Drawing.Point(126, 427);
+            this.btnLogin.Location = new System.Drawing.Point(33, 134);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(125, 34);
             this.btnLogin.TabIndex = 2;
@@ -104,34 +105,33 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(449, 228);
+            this.pictureBox1.Size = new System.Drawing.Size(486, 228);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
-            // label3
+            // groupBox1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(175, 265);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(198, 48);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "مرحبا مجدداً";
+            this.groupBox1.Controls.Add(this.btnLogin);
+            this.groupBox1.Controls.Add(this.txtID);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.btnCancel);
+            this.groupBox1.Controls.Add(this.txtPWD);
+            this.groupBox1.Location = new System.Drawing.Point(12, 258);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(486, 182);
+            this.groupBox1.TabIndex = 5;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "   مرحباً مجدداً   ";
             // 
             // FRM_LOGIN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(473, 473);
-            this.Controls.Add(this.label3);
+            this.ClientSize = new System.Drawing.Size(510, 451);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.txtPWD);
-            this.Controls.Add(this.txtID);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -142,8 +142,9 @@
             this.Text = "تسجيل الدخول";
             this.Load += new System.EventHandler(this.FRM_LOGIN_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -156,6 +157,6 @@
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

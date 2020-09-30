@@ -227,8 +227,8 @@
             // 
             this.الإصدار161ToolStripMenuItem.Enabled = false;
             this.الإصدار161ToolStripMenuItem.Name = "الإصدار161ToolStripMenuItem";
-            this.الإصدار161ToolStripMenuItem.Size = new System.Drawing.Size(111, 24);
-            this.الإصدار161ToolStripMenuItem.Text = "الإصدار 1.8.10";
+            this.الإصدار161ToolStripMenuItem.Size = new System.Drawing.Size(103, 24);
+            this.الإصدار161ToolStripMenuItem.Text = "الإصدار 1.9.6";
             this.الإصدار161ToolStripMenuItem.ToolTipText = "رقم اخر إصدار";
             // 
             // اسمالبائعToolStripMenuItem
