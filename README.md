@@ -24,7 +24,7 @@ This project is an application for Software Engineering Principles, Object-Orien
 
 ### System Requirements
 
-Main system functional requirements, starting with that system allow to add products, managing them by edit and delete or print a specific product, or print all products, and also exporting them to excel file, the next feature is that system allow to managing store categories like add new/edit/remove, also managing system customers by add new customers, edit and delete ones, and system main feature is to make new order and save each bill and print it, finally managing system users. As we are talking about all this features above.
+Main system functional requirements, starting with that system allow to add products, managing them by edit and delete or print a specific product, or print all products, and also exporting them to excel file, the next feature is that system allow to managing store categories like add new/edit/remove, also managing system customers by add new customers, edit and delete ones, and system main feature is to make new order and save each bill and print it, finally managing system users. As we are talking about all this features above here.
 
 ---
 
