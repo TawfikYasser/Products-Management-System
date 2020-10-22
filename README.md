@@ -1,4 +1,4 @@
-# Products Management System (Desktop Application using C# & SQL)
+# Products Management System Desktop Application
 
 ### Introduction
 
