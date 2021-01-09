@@ -8,7 +8,7 @@ Products management system allows users to manage their products, clients, and o
 
 ### Why this project
 
-This project is an application for Software Engineering Principles, Object-Oriented Programming, and Databases.
+This project is an application for Software Engineering Principles, Object-Oriented Programming, and Databases (SQL).
 
 ---
 
