@@ -79,4 +79,4 @@ IMAGE_PRODUCT image );
 > Soon the SE Documentation will be added then any `developer` can contribute in it, OOP Conecpts applied in C# Programming Languages, and in the DB part, we used TSQL > > but any one can use SQL or TSQL or even SQL/PL.
 ### More will be added soon.
 
-###### 2020
+###### 2020.
